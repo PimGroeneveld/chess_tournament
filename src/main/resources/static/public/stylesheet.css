@@ -1,0 +1,22 @@
+body{
+    background-color: powderblue;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: midnightblue;
+    font-family: 'Shrikhand', cursive;
+    position: relative;
+
+}
+
+#all-players-table{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
