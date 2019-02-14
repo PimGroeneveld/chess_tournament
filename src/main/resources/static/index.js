@@ -38,3 +38,8 @@ function fillPlayerTable($players){
     content += '</tbody> </table> <div class = "row"></div>';
     $("#all-players-div").html(content);
 }
+
+// open form
+$(document).on('click', '#addChessPlayer', function(){
+    window.location.href = '/addchessplayer.html';
+});

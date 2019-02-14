@@ -13,7 +13,7 @@ Zowel de backend als de frontend code moet in de repository worden opgenomen.
 Code die niet gecommit is wordt niet meegenomen in de beoordeling.
 
 
-(VERPLICHT)
+(VERPLICHT)     / DONE
 1. De GET
 Je gaat een applicatie maken voor een schaaktournooi.
 Je begint met een overzicht aan deelnemende schakers.
@@ -31,7 +31,7 @@ Toon alle schakers in de HTML in een mooi tabel.
 Pas css toe.
 Bonuspunten voor het gebruik van Bootstrap.
 
-(VERPLICHT)
+(VERPLICHT)   / DOING
 2. De POST
 Zorg ervoor dat de applicatie een manier heeft om de eigenschappen van een nieuwe schaker in te voeren.
 Met een knop "voeg schaker toe" wordt de schaker toegevoegd aan de database.
