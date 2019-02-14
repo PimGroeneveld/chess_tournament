@@ -7,7 +7,7 @@ $("#add-player-form").submit(function () {
     event.preventDefault();
     $(newPlayerForm).each(function (i, field) {
         if (field.name == "dateOfBirth") {
-            newPlayer[field.name] = field.value.toString();   //DOB not coming through
+            newPlayer[field.name] = field.value.toString();   //DOB not coming through, maybe not inserted right
         }
         if (field.name == "insertion" && field.name == null) {
             newPlayer[field.name] = "";

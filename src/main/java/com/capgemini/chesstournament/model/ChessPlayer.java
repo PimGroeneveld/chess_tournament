@@ -15,7 +15,7 @@ public class ChessPlayer {
     private String firstName;
     private String lastName;
     private String insertion;
-    private LocalDate birthDate;
+    private LocalDate dateOfBirth;
     private int wonMatches;
     private int lostMatches;
     private int draw;
@@ -23,11 +23,11 @@ public class ChessPlayer {
     public ChessPlayer() {
     }
 
-    public ChessPlayer(String firstName, String lastName, String insertion, LocalDate birthDate, int wonMatches, int lostMatches, int draw) {
+    public ChessPlayer(String firstName, String lastName, String insertion, LocalDate dateOfBirth, int wonMatches, int lostMatches, int draw) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.insertion = insertion;
-        this.birthDate = birthDate;
+        this.dateOfBirth = dateOfBirth;
         this.wonMatches = wonMatches;
         this.lostMatches = lostMatches;
         this.draw = draw;
@@ -61,12 +61,12 @@ public class ChessPlayer {
         this.insertion = insertion;
     }
 
-    public LocalDate getBirthDate() {
-        return birthDate;
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     public int getWonMatches() {

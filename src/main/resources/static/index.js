@@ -27,9 +27,9 @@ function fillPlayerTable($players){
     $.each($players, function (index, value) {
         content += "<tr>";
         console.log(value);
-        content += "<td>" + value.id + "</td>";
+        content += "<td style='cursor: pointer;' id='guestId' onClick = showSingleGuest(this)>" + value.id + "</td>";
         content += '<td>' + value.firstName + " " + value.insertion + " " + value.lastName + '</td>';
-        content += "<td>" + value.birthDate + "</td>";
+        content += "<td>" + value.dateOfBirth + "</td>";
         content += "<td>" + value.wonMatches + "</td>";
         content += "<td>" + value.lostMatches + "</td>";
         content += "<td>" + value.draw + "</td>";
@@ -43,3 +43,14 @@ function fillPlayerTable($players){
 $(document).on('click', '#addChessPlayer', function(){
     window.location.href = '/addchessplayer.html';
 });
+
+// function that gets id of the field that is clicked on, and passes it to playerdetail.js
+function showSingleGuest(clickId) {
+    getval(clickId);
+
+    function getval(cel) {
+        console.log("getval")
+        var playerId = cel.innerHTML;
+        window.location.href = '/playerdetail.html?playerId=' + encodeURIComponent(playerId);
+    }
+}

@@ -31,7 +31,7 @@ Toon alle schakers in de HTML in een mooi tabel.
 Pas css toe.
 Bonuspunten voor het gebruik van Bootstrap.
 
-(VERPLICHT)   / DOING
+(VERPLICHT)   / DONE
 2. De POST
 Zorg ervoor dat de applicatie een manier heeft om de eigenschappen van een nieuwe schaker in te voeren.
 Met een knop "voeg schaker toe" wordt de schaker toegevoegd aan de database.
@@ -49,10 +49,10 @@ Uiteraard kun je dit ook implementeren voor de Verloren Partijen en Remises.
 Het liefst heb ik de schakers met de meest gewonnen partijen bovenaan in het overzicht.
 
 (VERPLICHT)
-4. De DELETE
+4. De DELETE    / DONE
 Ik wil spelers kunnen verwijderen.
 In iedere tabelrij wil ik een knop delete hebben waarmee ik die speler verwijder.
-Bonuspunten Ik wil een waarschuwing  of ik het zeker weet als er een speler wordt verwijderd die al partijen heeft gewonnen of verloren.
+Bonuspunten Ik wil een waarschuwing  of ik het zeker weet als er een speler wordt verwijderd die al partijen heeft gewonnen of verloren.  / DONE
 
 (OPTIONEEL)
 5. Kies tussen de UPDATE of de RELATIE
