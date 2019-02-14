@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.core.MediaType;
+import java.time.LocalDate;
 import java.util.Optional;
 
 @RestController
@@ -26,6 +27,21 @@ public class ChessPlayerEndPoint {
     @PostMapping("/allplayers/add")
     public void addChessPlayer(@RequestBody ChessPlayer chessPlayer) {
         chessPlayerService.addChessPlayer(chessPlayer);
+    }
+
+    @GetMapping("/dbfill")
+    public void fillDBChessPlayer() {
+        ChessPlayer chessPlayer1 = new ChessPlayer("Pim", "Groeneveld", "", LocalDate.of(1992, 2,
+                11), 5, 4, 2);
+
+        ChessPlayer chessPlayer2 = new ChessPlayer("Magnus", "Carlsen", "", LocalDate.of(1990, 11,
+                30), 300, 0, 0);
+
+        ChessPlayer chessPlayer3 = new ChessPlayer("Jackie", "Witt", "de", LocalDate.of(1980, 5,
+                15), 25, 5, 6);
+        chessPlayerService.addChessPlayer(chessPlayer1);
+        chessPlayerService.addChessPlayer(chessPlayer2);
+        chessPlayerService.addChessPlayer(chessPlayer3);
     }
 
     @GetMapping("/allplayers/{id}")
