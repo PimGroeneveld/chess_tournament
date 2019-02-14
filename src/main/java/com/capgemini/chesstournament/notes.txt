@@ -1,0 +1,71 @@
+Dom reload
+
+
+
+----------------------------
+
+
+
+De code moet op github staan.
+Je start met het maken van een repository op github.
+Communiceer de url van jouw repository in 0111.nl/iwp
+Zowel de backend als de frontend code moet in de repository worden opgenomen.
+Code die niet gecommit is wordt niet meegenomen in de beoordeling.
+
+
+(VERPLICHT)
+1. De GET
+Je gaat een applicatie maken voor een schaaktournooi.
+Je begint met een overzicht aan deelnemende schakers.
+De informatie over een schaker die we bijhouden is:
+Voornaam
+Achternaam
+Tussenvoegsel
+Geboortedatum
+GewonnenPartijen
+Remises
+VerlorenPartijen
+
+Vul de database met wat schakers en vraag alle schakers op via een endpoint.
+Toon alle schakers in de HTML in een mooi tabel.
+Pas css toe.
+Bonuspunten voor het gebruik van Bootstrap.
+
+(VERPLICHT)
+2. De POST
+Zorg ervoor dat de applicatie een manier heeft om de eigenschappen van een nieuwe schaker in te voeren.
+Met een knop "voeg schaker toe" wordt de schaker toegevoegd aan de database.
+Wanneer we opnieuw alle schakers opvragen, komt de zojuist toegevoegde schaker erbij.
+
+Bonuspunten als de schaker meteen in het overzicht erbij komt.
+
+(OPTIONEEL)
+3. Het tussendoortje
+Het zou erg handig zijn als we met behulp van een knop met een + erop in de tabelregel een gewonnen partij kunnen toevoegen.
+Deze ophoging wordt meteen opgeslagen in de database.
+
+Uiteraard kun je dit ook implementeren voor de Verloren Partijen en Remises.
+
+Het liefst heb ik de schakers met de meest gewonnen partijen bovenaan in het overzicht.
+
+(VERPLICHT)
+4. De DELETE
+Ik wil spelers kunnen verwijderen.
+In iedere tabelrij wil ik een knop delete hebben waarmee ik die speler verwijder.
+Bonuspunten Ik wil een waarschuwing  of ik het zeker weet als er een speler wordt verwijderd die al partijen heeft gewonnen of verloren.
+
+(OPTIONEEL)
+5. Kies tussen de UPDATE of de RELATIE
+Ik wil de gegevens van de speler kunnen updaten.
+OF
+Ik wil dat ik een wedstrijd kan organiseren tussen twee spelers.
+Hiervoor heb ik een Klasse nodig genaamd Wedstrijd.
+De wedstrijd heeft enkele gegevens zoals Datum, Tijdstip, String Locatie.
+Uiteraard heeft iedere wedstrijd 2 spelers. Met deze spelers heeft de wedstrijd een HAS-A relatie.
+
+Implementeer dit zo creatief mogelijk.
+
+Bonuspunten Je kunt bonuspunten verdienen door een of meer unit-testen te schrijven.
+Het gebruik van een Mockito-mock zou het helemaal afmaken.
+Hoe zinvoller de test, des te meer bonuspunten.
+
