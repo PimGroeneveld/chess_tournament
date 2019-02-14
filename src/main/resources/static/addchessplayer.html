@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Add player</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Add competitor</title>
     <link rel="stylesheet" href="/public/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
 </head>
-
 <body>
+
 <div id="header">
-    <h1>Add a chess player:</h1>
+    <h1>Add a competitor:</h1>
 </div>
-<div id="all-players-table">
-
-
-    <div id="all-players-div">
-
-    </div>
+<div class="form-style-2">
+    <div class="form-style-2-heading">Provide your information: </div>
+    <form id="add-player-form" >
+        <label for="firstName">First name: *</label>
+        <input id="firstName" name="firstName" type="text" class="input-field">
+        <br>
+        <label for="insertion">Insertion:</label>
+        <input id="insertion" name="insertion" type="text" class="input-field">
+        <br>
+        <label for="lastName">Last name: *</label>
+        <input id="lastName" name="lastName" type="text" class="input-field">
+        <br>
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input id="dateOfBirth" name="dateOfBirth" type="date" class="input-field">
+        <br>
+        <label for="wonMatches">Matches won:</label>
+        <input id="wonMatches" name="wonMatches" type="number" class="input-field">
+        <br>
+        <label for="lostMatches">Matches lost:</label>
+        <input id="lostMatches" name="lostMatches" type="number" class="input-field">
+        <br>
+        <label for="draw">Matches draw:</label>
+        <input id="draw" name="draw" type="number" class="input-field">
+        <br>
+        <input id="confirmNewPlayer" type="submit" value = "Submit"/>
+        <a href="/index.html" class="button">Go back</a>
+    </form>
 </div>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="index.js"></script>
+<script src="addchessplayer.js"></script>
 </body>
-
 </html>
