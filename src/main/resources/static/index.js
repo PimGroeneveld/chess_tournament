@@ -11,14 +11,15 @@ $(document).on('click', '#get-all-players-button', function(){
 });
 
 function fillPlayerTable($players){
-    var content = '<table id = "allPlayers">';
+    // class adds some bootstrap table layout
+    var content = '<table id = "allPlayers" class="table table-hover table-dark">';
     content += '<thead id = tableHeader>';
-    content += '<tr> <th> Number </th>';
-    content += '<th> Name </th>';
-    content += '<th> DoB </th>';
-    content += '<th> Wins </th>';
-    content += '<th> Losses </th>';
-    content += '<th> Draws </th>';
+    content += '<tr> <th scope="col"> Number </th>';
+    content += '<th scope="col"> Name </th>';
+    content += '<th scope="col"> DoB </th>';
+    content += '<th scope="col"> Wins </th>';
+    content += '<th scope="col"> Losses </th>';
+    content += '<th scope="col"> Draws </th>';
     content += '</thead>';
     content += '<tbody id = "tablebody">';
     console.log($players);
