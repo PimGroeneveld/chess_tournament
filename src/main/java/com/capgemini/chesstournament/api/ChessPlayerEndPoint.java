@@ -26,6 +26,7 @@ public class ChessPlayerEndPoint {
     @Consumes(MediaType.APPLICATION_JSON)
     @PostMapping("/allplayers/add")
     public void addChessPlayer(@RequestBody ChessPlayer chessPlayer) {
+        System.out.println(chessPlayer.getBirthDate());
         chessPlayerService.addChessPlayer(chessPlayer);
     }
 

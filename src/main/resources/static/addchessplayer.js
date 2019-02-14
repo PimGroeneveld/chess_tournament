@@ -5,20 +5,17 @@ $("#add-player-form").submit(function () {
     var newPlayer = {};  //DTO
     console.log(newPlayerForm);
     event.preventDefault();
-    // $(newPlayerForm).each(function(i, field) {
-    //     if (field.name == "dateOfBirth") {
-    //         newPlayer[field.name] = field.value.toString()
-    //     } else {
-    //         newPlayer[field.name] = field.value
-    //     }
-    // });
-    $(newPlayerForm).each(function(i, field) {
+    $(newPlayerForm).each(function (i, field) {
+        if (field.name == "dateOfBirth") {
+            newPlayer[field.name] = field.value.toString();   //DOB not coming through
+        }
         if (field.name == "insertion" && field.name == null) {
             newPlayer[field.name] = "";
         } else {
-            newPlayer[field.name] = field.value
+            newPlayer[field.name] = field.value;
         }
     });
+    console.log(newPlayer.dateOfBirth);
 
     console.log(newPlayer);
     $.ajax({
